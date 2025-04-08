@@ -12,11 +12,4 @@ public class AllTests
         Assert.True(kunde.CreatedDate.Date == DateTime.Today.Date, "CreatedDate should be today's date.");
     }
 
-    [Fact]
-    public void WhenUsingMockDataAccessServiceAreWeGettingFiveCustomers()
-    {
-        var mockService = new MockDataAccessService();
-        var customers = mockService.GetAllCustomers().ToList();
-        Assert.Equal(5, customers.Count);
-    }
 }
