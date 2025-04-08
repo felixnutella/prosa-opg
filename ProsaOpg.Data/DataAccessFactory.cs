@@ -2,15 +2,12 @@ namespace ProsaOpg.Data;
 
 public class DataAccessFactory
 {
-    public static IDataAccess CreateDataContext(string connectionString, bool useMockData = false)
+    public static IDataAccess CreateDataContext(string connectionString)
     {
-        if (useMockData)
-        {
-            return new MockDataAccessService();
-        }
-
-        // if DEBUG... return new MockDataAccessService();
-        // else if RELEASE...
+#if DEBUG
+        return new MockDataAccessService();
+#else
         return new EfDataAccessService(connectionString);
+#endif
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace ProsaOpg.Typer;
+﻿namespace ProsaOpg.Types;
 
 public class Customer
 {

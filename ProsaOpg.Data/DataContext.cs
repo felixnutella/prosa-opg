@@ -1,4 +1,4 @@
-using ProsaOpg.Typer;
+using ProsaOpg.Types;
 
 namespace ProsaOpg.Data;
 

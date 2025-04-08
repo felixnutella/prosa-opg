@@ -1,4 +1,4 @@
-﻿using ProsaOpg.Typer;
+﻿using ProsaOpg.Types;
 
 namespace ProsaOpg.Data;
 
@@ -14,9 +14,7 @@ public class EfDataAccessService : IDataAccess
     public IEnumerable<Customer> GetAllCustomers()
     {
         using EfContext context = new EfContext(_connectionString);
-        Console.WriteLine("Getting all customers from database using EF Core using " + _connectionString);
         var customers = context.Customers.ToList();
-        Console.WriteLine("Got {Count} customers from database", customers.Count);
         return customers;
     }
 

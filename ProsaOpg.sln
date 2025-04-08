@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProsaOpg.Data", "ProsaOpg.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProsaOpg.Test", "ProsaOpg.Test\ProsaOpg.Test.csproj", "{D9938F5B-7D85-4F06-940A-23ABF5CB30F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProsaOpg.Typer", "ProsaOpg.Typer\ProsaOpg.Typer.csproj", "{3610F8BB-280F-4DED-9EB8-B27A9E58EA59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProsaOpg.Types", "ProsaOpg.Types\ProsaOpg.Types.csproj", "{3610F8BB-280F-4DED-9EB8-B27A9E58EA59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
